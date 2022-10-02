@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  color: var(--light-grey);
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+h2 {
+  color: var(--white);
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-dark-blue);
+}
+
+.card {
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  padding: 1.5rem;
+  background-color: var(--dark-blue);
+}
+
+/* Rating state */
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: hsl(213, 20%, 22%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.circle img {
+  height: 35%;
+  width: 35%;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.rating li button {
+  width: 50px;
+  height: 50px;
+  background-color: hsl(213, 19%, 15%);
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.rating li button:hover {
+  background-color: var(--orange);
+}
+
+.rating li button:focus {
+  background-color: hsl(216, 12%, 54%);
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  cursor: pointer;
+}
+
+/* Thankyou state styling */
+
+.thankyou-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.thankyou-card p {
+  text-align: center;
+}
+
+.message {
+  background-color: hsl(213, 20%, 22%);
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin: 30px 0;
+}
+.message p,
+.message span {
+  color: var(--orange);
+}
+
+/* these classes will be added dynamically */
+.hide {
+  display: none;
+}
